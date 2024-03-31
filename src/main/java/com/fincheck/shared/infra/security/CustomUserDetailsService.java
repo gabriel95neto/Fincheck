@@ -5,13 +5,14 @@ import java.util.ArrayList;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
 
 import com.fincheck.Users.models.User;
 import com.fincheck.Users.repositories.UserRepository;
 
 import lombok.AllArgsConstructor;
 
-
+@Component
 @AllArgsConstructor
 public class CustomUserDetailsService implements UserDetailsService {
   private UserRepository userRepository;
